@@ -50,14 +50,14 @@ namespace Microsoft.AspNetCore.Server.Kestrel.GeneratedCode
                 ")}}}
 
                 {(handleUnknown ? $@"
-                    key = new string('\0', keyLength);
-                    fixed(char *keyBuffer = key)
+                key = new string('\0', keyLength);
+                fixed(char *keyBuffer = key)
+                {{
+                    if (!AsciiUtilities.TryGetAsciiString(ptr, keyBuffer, keyLength))
                     {{
-                        if (!AsciiUtilities.TryGetAsciiString(ptr, keyBuffer, keyLength))
-                        {{
-                            throw BadHttpRequestException.GetException(RequestRejectionReason.InvalidCharactersInHeaderName);
-                        }}
+                        throw new DecodingException(""Header name contains non-ASCII or null characters"");
                     }}
+                }}
                 ": "")}
             }}";
 
