@@ -1,11 +1,7 @@
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 14
-VisualStudioVersion = 14.0.25420.1
+# Visual Studio 15
+VisualStudioVersion = 15.0.26118.1
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "Microsoft.AspNetCore.Server.Kestrel", "src\Microsoft.AspNetCore.Server.Kestrel\Microsoft.AspNetCore.Server.Kestrel.xproj", "{F510611A-3BEE-4B88-A613-5F4A74ED82A1}"
-EndProject
-Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "Microsoft.AspNetCore.Server.KestrelTests", "test\Microsoft.AspNetCore.Server.KestrelTests\Microsoft.AspNetCore.Server.KestrelTests.xproj", "{37F3BFB2-6454-49E5-9D7F-581BF755CCFE}"
-EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{7972A5D6-3385-4127-9277-428506DD44FF}"
 	ProjectSection(SolutionItems) = preProject
 		build.cmd = build.cmd
@@ -14,23 +10,13 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution 
 		NuGet.Config = NuGet.Config
 	EndProjectSection
 EndProject
-Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "SampleApp", "samples\SampleApp\SampleApp.xproj", "{2C3CB3DC-EEBF-4F52-9E1C-4F2F972E76C3}"
-EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{2D5D5227-4DBD-499A-96B1-76A36B03B750}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "test", "test", "{D3273454-EA07-41D2-BF0B-FCC3675C2483}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "samples", "samples", "{8A3D00B8-1CCF-4BE6-A060-11104CE2D9CE}"
 EndProject
-Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "LargeResponseApp", "samples\LargeResponseApp\LargeResponseApp.xproj", "{B35D4D31-E74C-4646-8A11-7A7A40F0021E}"
-EndProject
-Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "Microsoft.AspNetCore.Server.Kestrel.GeneratedCode", "tools\Microsoft.AspNetCore.Server.Kestrel.GeneratedCode\Microsoft.AspNetCore.Server.Kestrel.GeneratedCode.xproj", "{BD2D4D29-1BD9-40D0-BB31-337D5416B63C}"
-EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tools", "tools", "{327F7880-D9AF-46BD-B45C-3B7E34A01DFD}"
-EndProject
-Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "Microsoft.AspNetCore.Server.Kestrel.Https", "src\Microsoft.AspNetCore.Server.Kestrel.Https\Microsoft.AspNetCore.Server.Kestrel.Https.xproj", "{5F64B3C3-0C2E-431A-B820-A81BBFC863DA}"
-EndProject
-Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "Microsoft.AspNetCore.Server.Kestrel.FunctionalTests", "test\Microsoft.AspNetCore.Server.Kestrel.FunctionalTests\Microsoft.AspNetCore.Server.Kestrel.FunctionalTests.xproj", "{9559A5F1-080C-4909-B6CF-7E4B3DC55748}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "shared", "shared", "{0EF2ACDF-012F-4472-A13A-4272419E2903}"
 	ProjectSection(SolutionItems) = preProject
@@ -52,7 +38,21 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "shared", "shared", "{0EF2AC
 		test\shared\TestServiceContext.cs = test\shared\TestServiceContext.cs
 	EndProjectSection
 EndProject
-Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "Microsoft.AspNetCore.Server.Kestrel.Performance", "test\Microsoft.AspNetCore.Server.Kestrel.Performance\Microsoft.AspNetCore.Server.Kestrel.Performance.xproj", "{70567566-524C-4B67-9B59-E5C206D6C2EB}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Microsoft.AspNetCore.Server.Kestrel", "src\Microsoft.AspNetCore.Server.Kestrel\Microsoft.AspNetCore.Server.Kestrel.csproj", "{F510611A-3BEE-4B88-A613-5F4A74ED82A1}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Microsoft.AspNetCore.Server.KestrelTests", "test\Microsoft.AspNetCore.Server.KestrelTests\Microsoft.AspNetCore.Server.KestrelTests.csproj", "{37F3BFB2-6454-49E5-9D7F-581BF755CCFE}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SampleApp", "samples\SampleApp\SampleApp.csproj", "{2C3CB3DC-EEBF-4F52-9E1C-4F2F972E76C3}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LargeResponseApp", "samples\LargeResponseApp\LargeResponseApp.csproj", "{B35D4D31-E74C-4646-8A11-7A7A40F0021E}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Microsoft.AspNetCore.Server.Kestrel.GeneratedCode", "tools\Microsoft.AspNetCore.Server.Kestrel.GeneratedCode\Microsoft.AspNetCore.Server.Kestrel.GeneratedCode.csproj", "{BD2D4D29-1BD9-40D0-BB31-337D5416B63C}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Microsoft.AspNetCore.Server.Kestrel.Https", "src\Microsoft.AspNetCore.Server.Kestrel.Https\Microsoft.AspNetCore.Server.Kestrel.Https.csproj", "{5F64B3C3-0C2E-431A-B820-A81BBFC863DA}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Microsoft.AspNetCore.Server.Kestrel.FunctionalTests", "test\Microsoft.AspNetCore.Server.Kestrel.FunctionalTests\Microsoft.AspNetCore.Server.Kestrel.FunctionalTests.csproj", "{9559A5F1-080C-4909-B6CF-7E4B3DC55748}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Microsoft.AspNetCore.Server.Kestrel.Performance", "test\Microsoft.AspNetCore.Server.Kestrel.Performance\Microsoft.AspNetCore.Server.Kestrel.Performance.csproj", "{70567566-524C-4B67-9B59-E5C206D6C2EB}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -97,6 +97,7 @@ Global
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
+		{0EF2ACDF-012F-4472-A13A-4272419E2903} = {D3273454-EA07-41D2-BF0B-FCC3675C2483}
 		{F510611A-3BEE-4B88-A613-5F4A74ED82A1} = {2D5D5227-4DBD-499A-96B1-76A36B03B750}
 		{37F3BFB2-6454-49E5-9D7F-581BF755CCFE} = {D3273454-EA07-41D2-BF0B-FCC3675C2483}
 		{2C3CB3DC-EEBF-4F52-9E1C-4F2F972E76C3} = {8A3D00B8-1CCF-4BE6-A060-11104CE2D9CE}
@@ -104,7 +105,6 @@ Global
 		{BD2D4D29-1BD9-40D0-BB31-337D5416B63C} = {327F7880-D9AF-46BD-B45C-3B7E34A01DFD}
 		{5F64B3C3-0C2E-431A-B820-A81BBFC863DA} = {2D5D5227-4DBD-499A-96B1-76A36B03B750}
 		{9559A5F1-080C-4909-B6CF-7E4B3DC55748} = {D3273454-EA07-41D2-BF0B-FCC3675C2483}
-		{0EF2ACDF-012F-4472-A13A-4272419E2903} = {D3273454-EA07-41D2-BF0B-FCC3675C2483}
 		{70567566-524C-4B67-9B59-E5C206D6C2EB} = {D3273454-EA07-41D2-BF0B-FCC3675C2483}
 	EndGlobalSection
 EndGlobal

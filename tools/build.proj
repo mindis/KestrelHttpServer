@@ -1,0 +1,10 @@
+<Project ToolsVersion="15.0">
+  <Import Project="..\build\common.props" />
+
+  <Target Name="GenerateCode">
+    <Exec Command="dotnet run -f netcoreapp1.1 -p Microsoft.AspNetCore.Server.Kestrel.GeneratedCode/Microsoft.AspNetCore.Server.Kestrel.GeneratedCode.csproj
+$(MSBuildProjectDirectory)/../src/Microsoft.AspNetCore.Server.Kestrel/Internal/Http/FrameHeaders.Generated.cs
+$(MSBuildProjectDirectory)/../src/Microsoft.AspNetCore.Server.Kestrel/Internal/Http/Frame.Generated.cs"
+        />
+  </Target>
+</Project>
