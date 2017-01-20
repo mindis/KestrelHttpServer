@@ -7,4 +7,4 @@ k-standard-goals
 custom-goals
 
 #initialize
-  dotnet command='msbuild tools/Microsoft.AspNetCore.Server.Kestrel.GeneratedCode/run.proj /t:GenerateCode'
+  dotnet command='run -f netcoreapp1.1 -p tools/Microsoft.AspNetCore.Server.Kestrel.GeneratedCode/Microsoft.AspNetCore.Server.Kestrel.GeneratedCode.csproj src/Microsoft.AspNetCore.Server.Kestrel/Internal/Http/FrameHeaders.Generated.cs src/Microsoft.AspNetCore.Server.Kestrel/Internal/Http/Frame.Generated.cs'

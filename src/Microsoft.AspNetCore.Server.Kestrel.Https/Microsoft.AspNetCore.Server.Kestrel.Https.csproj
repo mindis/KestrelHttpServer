@@ -12,13 +12,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\Microsoft.AspNetCore.Server.Kestrel\Microsoft.AspNetCore.Server.Kestrel.csproj" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <PackageReference Include="NETStandard.Library" Version="1.6.2-*" />
-    <PackageReference Include="Microsoft.Extensions.TaskCache.Sources" Version="1.2.0-*">
-      <PrivateAssets>All</PrivateAssets>
-    </PackageReference>
+    <PackageReference Include="Microsoft.Extensions.TaskCache.Sources" Version="1.2.0-*" PrivateAssets="All" />
   </ItemGroup>
 
   <ItemGroup Condition=" '$(TargetFramework)' == 'netstandard1.3' ">
