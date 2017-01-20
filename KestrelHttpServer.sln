@@ -52,9 +52,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Microsoft.AspNetCore.Server
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Microsoft.AspNetCore.Server.Kestrel.FunctionalTests", "test\Microsoft.AspNetCore.Server.Kestrel.FunctionalTests\Microsoft.AspNetCore.Server.Kestrel.FunctionalTests.csproj", "{9559A5F1-080C-4909-B6CF-7E4B3DC55748}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "benchmark", "benchmark", "{332A75E4-7AF2-4B15-8F63-CF6266849A78}"
-EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Microsoft.AspNetCore.Server.Kestrel.Performance", "benchmark\Microsoft.AspNetCore.Server.Kestrel.Performance\Microsoft.AspNetCore.Server.Kestrel.Performance.csproj", "{2BE2A01A-8ABD-4E01-AC92-FB8EC4815DBA}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Microsoft.AspNetCore.Server.Kestrel.Performance", "test\Microsoft.AspNetCore.Server.Kestrel.Performance\Microsoft.AspNetCore.Server.Kestrel.Performance.csproj", "{EBFE9719-A44B-4978-A71F-D5C254E7F35A}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -150,18 +148,18 @@ Global
 		{9559A5F1-080C-4909-B6CF-7E4B3DC55748}.Release|x64.Build.0 = Release|x64
 		{9559A5F1-080C-4909-B6CF-7E4B3DC55748}.Release|x86.ActiveCfg = Release|x86
 		{9559A5F1-080C-4909-B6CF-7E4B3DC55748}.Release|x86.Build.0 = Release|x86
-		{2BE2A01A-8ABD-4E01-AC92-FB8EC4815DBA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{2BE2A01A-8ABD-4E01-AC92-FB8EC4815DBA}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{2BE2A01A-8ABD-4E01-AC92-FB8EC4815DBA}.Debug|x64.ActiveCfg = Debug|x64
-		{2BE2A01A-8ABD-4E01-AC92-FB8EC4815DBA}.Debug|x64.Build.0 = Debug|x64
-		{2BE2A01A-8ABD-4E01-AC92-FB8EC4815DBA}.Debug|x86.ActiveCfg = Debug|x86
-		{2BE2A01A-8ABD-4E01-AC92-FB8EC4815DBA}.Debug|x86.Build.0 = Debug|x86
-		{2BE2A01A-8ABD-4E01-AC92-FB8EC4815DBA}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{2BE2A01A-8ABD-4E01-AC92-FB8EC4815DBA}.Release|Any CPU.Build.0 = Release|Any CPU
-		{2BE2A01A-8ABD-4E01-AC92-FB8EC4815DBA}.Release|x64.ActiveCfg = Release|x64
-		{2BE2A01A-8ABD-4E01-AC92-FB8EC4815DBA}.Release|x64.Build.0 = Release|x64
-		{2BE2A01A-8ABD-4E01-AC92-FB8EC4815DBA}.Release|x86.ActiveCfg = Release|x86
-		{2BE2A01A-8ABD-4E01-AC92-FB8EC4815DBA}.Release|x86.Build.0 = Release|x86
+		{EBFE9719-A44B-4978-A71F-D5C254E7F35A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EBFE9719-A44B-4978-A71F-D5C254E7F35A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EBFE9719-A44B-4978-A71F-D5C254E7F35A}.Debug|x64.ActiveCfg = Debug|x64
+		{EBFE9719-A44B-4978-A71F-D5C254E7F35A}.Debug|x64.Build.0 = Debug|x64
+		{EBFE9719-A44B-4978-A71F-D5C254E7F35A}.Debug|x86.ActiveCfg = Debug|x86
+		{EBFE9719-A44B-4978-A71F-D5C254E7F35A}.Debug|x86.Build.0 = Debug|x86
+		{EBFE9719-A44B-4978-A71F-D5C254E7F35A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EBFE9719-A44B-4978-A71F-D5C254E7F35A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EBFE9719-A44B-4978-A71F-D5C254E7F35A}.Release|x64.ActiveCfg = Release|x64
+		{EBFE9719-A44B-4978-A71F-D5C254E7F35A}.Release|x64.Build.0 = Release|x64
+		{EBFE9719-A44B-4978-A71F-D5C254E7F35A}.Release|x86.ActiveCfg = Release|x86
+		{EBFE9719-A44B-4978-A71F-D5C254E7F35A}.Release|x86.Build.0 = Release|x86
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -175,6 +173,6 @@ Global
 		{BD2D4D29-1BD9-40D0-BB31-337D5416B63C} = {327F7880-D9AF-46BD-B45C-3B7E34A01DFD}
 		{5F64B3C3-0C2E-431A-B820-A81BBFC863DA} = {2D5D5227-4DBD-499A-96B1-76A36B03B750}
 		{9559A5F1-080C-4909-B6CF-7E4B3DC55748} = {D3273454-EA07-41D2-BF0B-FCC3675C2483}
-		{2BE2A01A-8ABD-4E01-AC92-FB8EC4815DBA} = {332A75E4-7AF2-4B15-8F63-CF6266849A78}
+		{EBFE9719-A44B-4978-A71F-D5C254E7F35A} = {D3273454-EA07-41D2-BF0B-FCC3675C2483}
 	EndGlobalSection
 EndGlobal
