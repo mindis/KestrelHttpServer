@@ -1,25 +1,15 @@
 <Project Sdk="Microsoft.NET.Sdk.Web" ToolsVersion="15.0">
 
+  <Import Project="..\..\build\common.props" />
+
   <PropertyGroup>
-    <TargetFrameworks>netcoreapp1.1;net451</TargetFrameworks>
+    <TargetFrameworks>netcoreapp1.1</TargetFrameworks>
     <OutputType>Exe</OutputType>
-    <!-- TODO remove rid when https://github.com/dotnet/sdk/issues/396 is resolved -->
-    <RuntimeIdentifier>win7-x64</RuntimeIdentifier>
   </PropertyGroup>
 
   <ItemGroup>
     <PackageReference Include="Microsoft.AspNetCore.Hosting" Version="1.2.0-*" />
     <PackageReference Include="Microsoft.AspNetCore.Http.Features" Version="1.2.0-*" />
-  </ItemGroup>
-
-  <ItemGroup Condition=" '$(TargetFramework)' == 'netcoreapp1.1' ">
-    <PackageReference Include="Microsoft.NETCore.App" Version="1.2.0-*" />
-  </ItemGroup>
-
-  <ItemGroup Condition=" '$(TargetFramework)' == 'net451' ">
-    <Reference Include="System.Runtime" />
-    <Reference Include="System.Text.Encoding" />
-    <Reference Include="System.Threading.Tasks" />
   </ItemGroup>
 
 </Project>
