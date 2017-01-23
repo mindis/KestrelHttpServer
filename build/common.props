@@ -2,7 +2,7 @@
   <Import Project="..\version.props" />
 
   <PropertyGroup>
-    <Product>Microsoft .NET Extensions</Product>
+    <Product>Microsoft ASP.NET Core</Product>
     <RepositoryUrl>https://github.com/aspnet/KestrelHttpServer</RepositoryUrl>
     <RepositoryType>git</RepositoryType>
     <AssemblyOriginatorKeyFile>$(MSBuildThisFileDirectory)Key.snk</AssemblyOriginatorKeyFile>
