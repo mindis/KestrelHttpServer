@@ -115,7 +115,11 @@ namespace Microsoft.AspNetCore.Server.Kestrel.Internal.Networking
             _allocCallback = null;
             _readCallback = null;
             _readState = null;
-            _uv.read_stop(this);
+
+            if (!IsClosed)
+            {
+                _uv.read_stop(this);
+            }
         }
 
         public int TryWrite(Libuv.uv_buf_t buf)
